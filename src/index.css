@@ -1,0 +1,139 @@
+body {
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input::placeholderm,
+textarea::placeholder {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #AAA
+}
+
+a,
+nav button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: .4s;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover,
+nav button:hover {
+  color: #bbb;
+}
+
+/* form styles */
+
+form {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+label span {
+  margin-bottom: .3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: 1px solid #CCC;
+  border-radius: .4em;
+  padding: .8em;
+  background-color: transparent;
+}
+
+.btn {
+  background-color: #1a8918;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+.btn.btn-dark {
+  background-color: #000;
+  border-radius: 0;
+}
+
+.btn.btn-outline {
+  background-color: transparent;
+  border-radius: 0;
+  color: #000;
+  border: 1px solid #000;
+  padding: 7px 30px;
+}
+
+.btn:hover {
+  background-color: #0F730c;
+  color: #FFF;
+}
+
+.btn.btn-outline:hover {
+  background-color: #000;
+}
+
+.btn.btn-danger:hover {
+  background-color: #DC3545;
+}
+
+button[disable] {
+  background-color: #AAA;
+}
+
+.container .error {
+  color: #721C24;
+  background-color: #F8D7DA;
+  border: 1px solid #f5c6cb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container .message {
+  color: #23721c;
+  background-color: #d7f8e6;
+  border: 1px solid #dff5c6;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.backBtn {
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+
+.providers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.providers svg {
+  font-size: 20px;
+}

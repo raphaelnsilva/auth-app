@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  gap: 100px;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+.loginBtn {
+  border: 1px solid #c2c2c2;
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

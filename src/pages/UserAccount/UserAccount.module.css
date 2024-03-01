@@ -1,0 +1,33 @@
+.userAccountContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+}
+
+.userAccountContainer h2 {
+  font-size: 2.2em;
+  margin-bottom: .5em;
+}
+
+.userAccountContainer p {
+  color: #aaa;
+  margin-bottom: 1em;
+}
+
+.logoutBtn {
+  background-color: #e9e9e9;
+  color: #000000;
+  padding: 1em 3em;
+  border-radius: 1em;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.logoutBtn:hover {
+  background-color: #71aaff;
+  color: #fff;
+}
