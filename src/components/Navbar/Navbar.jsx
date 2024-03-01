@@ -4,7 +4,6 @@ import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const { user } = useAuthValue();
-  console.log(user)
 
   return (
     <header className={styles.header}>
