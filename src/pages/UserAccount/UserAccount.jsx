@@ -10,8 +10,14 @@ const UserAccount = () => {
     <section className={styles.userAccountContainer}>
       <h1>Pagina de gerenciamento de conta!</h1>
       <ul>
-        <li>Nome: {user.displayName}</li>
-        <li>Email: {user.email}</li>
+        <label>
+          <span>Nome</span>
+          <input type="text" value={user.displayName} readOnly />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="text" value={user.email} readOnly />
+        </label>
       </ul>
       <button className={styles.logoutBtn} onClick={logout}>Sair</button>
     </section>

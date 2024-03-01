@@ -1,12 +1,15 @@
-.navbar {
+.header {
   display: flex;
   box-shadow: rgba(0,0,0, .15) 0px -2px 10px 0px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1em;
   padding: 1.5em;
 }
 
+.navbar {
+  
+}
 
 .navbar a {
   padding: .4em .6em;
@@ -17,3 +20,7 @@
   color: #fff;
 }
 
+
+.userImage {
+  border-radius: 50%;
+}

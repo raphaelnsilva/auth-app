@@ -85,8 +85,7 @@ const Register = () => {
             />
           </label>
       
-          <div style={{margin: '20px 0'}}>Ja tem uma conta? <Link to='/login' style={{color: '#6B98FA'}}>Fazer login</Link></div>
-          {!loading && <button className='btn'>Cadastrar</button>}
+          {!loading && <button className='btn'>Aceite e cadastre-se</button>}
           {loading && <button className='btn' >Aguarde...</button>}
           {error && <p className='error'>{error}</p>}
           
@@ -95,6 +94,7 @@ const Register = () => {
             Continuar com Google
           </div>
   
+          <div style={{margin: '20px 0'}}>Já faz parte do Auth App? <Link to='/login' style={{color: '#6B98FA'}}>Entrar</Link></div>
         </form>
       </div>
     </>

@@ -4,11 +4,12 @@ import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const { user } = useAuthValue();
+  console.log(user)
 
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
-        <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : "")}>Home</NavLink>
+        <NavLink to="/auth-app" className={({ isActive }) => (isActive ? styles.active : "")}>Home</NavLink>
         {!user && (
           <>
             <NavLink to="/login" className={({ isActive }) => (isActive ? styles.active : "")}>Entrar</NavLink>
@@ -21,6 +22,7 @@ const Navbar = () => {
           </>
         )}
       </nav>
+      <NavLink to='/account'><img src={user ? `${user.photoURL}`: './profile-picture.png'} alt="userImage" className={styles.userImage} width='50px' /></NavLink>
     </header>
   )
 }

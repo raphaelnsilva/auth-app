@@ -37,11 +37,11 @@ function App() {
           <Navbar />
           <main className="container">
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/login' element={!user ? <Login /> : <Navigate to="/" />} />
-              <Route path='/register' element={!user ? <Register /> : <Navigate to="/" />} />
+              <Route path='/auth-app' element={<Home />} />
+              <Route path='/login' element={!user ? <Login /> : <Navigate to="/auth-app" />} />
+              <Route path='/register' element={!user ? <Register /> : <Navigate to="/auth-app" />} />
               <Route path='/account' element={user ? <UserAccount /> : <Navigate to="/login" />} />
-              <Route path='/resetPassword' element={!user ? <ResetPassword /> : <Navigate to="/" />} />
+              <Route path='/resetPassword' element={!user ? <ResetPassword /> : <Navigate to="/auth-app" />} />
             </Routes>
           </main>
           <Footer />
